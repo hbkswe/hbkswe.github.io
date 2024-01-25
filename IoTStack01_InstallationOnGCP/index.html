@@ -18,7 +18,7 @@
     
     
       
-        <title>IoT Stack Installation On Ubuntu - Henry's blog</title>
+        <title>IoT Stack Installation On Ubuntu - Henry Le's blog</title>
       
     
     
@@ -86,7 +86,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Henry&#39;s blog" class="md-header__button md-logo" aria-label="Henry's blog" data-md-component="logo">
+    <a href=".." title="Henry Le&#39;s blog" class="md-header__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -100,7 +100,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Henry's blog
+            Henry Le's blog
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,13 +278,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Henry&#39;s blog" class="md-nav__button md-logo" aria-label="Henry's blog" data-md-component="logo">
+    <a href=".." title="Henry Le&#39;s blog" class="md-nav__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    Henry's blog
+    Henry Le's blog
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -548,27 +548,27 @@ sudo apt upgrade -y
 <div class="highlight"><pre><span></span><code>curl -fsSL https://raw.githubusercontent.com/SensorsIot/IOTstack/master/install.sh | bash
 </code></pre></div>
 <p>As default, a directory call /IOTStack will be created as your /home directory
-<img alt="Placeholder" src="/img/IoTStack/cd IOTStack.png" width="600" /></p>
+<img alt="Placeholder" src="../img/IoTStack/cd%20IOTStack.png" width="600" /></p>
 <p>As you may see, there are two script file, <em>install.sh</em> and <em>menu.sh</em>, <em>install.sh</em> is indeed the script file we curl from the link above. By invokinng <em>install.sh</em>, another directory tree of IOTStack will then created and the content will be cloned just as the same as the parent folder we see here.</p>
 <p>Now, its time to see what we have in menu</p>
 <div class="highlight"><pre><span></span><code>cd ~
 cd /IOTStack
 ./menu.sh
 </code></pre></div>
-<p><img alt="Placeholder" src="/img/IoTStack/menu.png" width="500" /></p>
+<p><img alt="Placeholder" src="../img/IoTStack/menu.png" width="500" /></p>
 <p>Using your arrow keys to navigate around the menu, Build Stack is the first place we need to visit</p>
 <p>If you install IOTStack on a completely clean OS, without even docker installed, IOTStack will help you install the needed docker version.</p>
-<p><img alt="Placeholder" src="/img/IoTStack/Screenshot 2021-10-27_162608.png" width="600" /></p>
+<p><img alt="Placeholder" src="../img/IoTStack/Screenshot%202021-10-27_162608.png" width="600" /></p>
 <p>If everything is running properly, a menu will be shown
-<img alt="Placeholder" src="/img/IoTStack/menushown.png" width="600" /></p>
+<img alt="Placeholder" src="../img/IoTStack/menushown.png" width="600" /></p>
 <p>Navigating aroung by arrow keys and choosing the docker images by typing space bar. In my case, I choose <strong>grafana, influxdb, mosquitto, nodered, portainer-ce, portainer-agent, postgres, tasmoadmin and wireguard</strong>.</p>
 <p>At this point, you finished choosing your <em>stack</em>, assuming this is the first time you install IOTStack, there are no images or containers running in you system yet. The next step is making eveything up and running.</p>
 <p>Choosing the second option in the menu.
-<img alt="Placeholder" src="/img/IoTStack/menushown.png" width="600" /></p>
+<img alt="Placeholder" src="../img/IoTStack/menushown.png" width="600" /></p>
 <p>There are several useful options in the <em>Docker Commands</em> menu, in this article I simply choosing <em>Start Stack</em>.
 The very first time building IOTStack might take a while because there are no existing images stored in your system yet. So for the first time, images of chosen option from the previous step will be automatically pulling to your system and then make it running.</p>
 <p>So far so good, the Stack after built up will look just as below, if there are any errors occur, error message will let you know while building up the stack.</p>
-<p><img alt="Placeholder" src="/img/IoTStack/builtup.png" width="700" /></p>
+<p><img alt="Placeholder" src="../img/IoTStack/builtup.png" width="700" /></p>
 <p>To check whether the docker images was pulled to your system, enter the following command</p>
 <div class="highlight"><pre><span></span><code>docker images
 </code></pre></div>
@@ -577,12 +577,12 @@ The very first time building IOTStack might take a while because there are no ex
 </code></pre></div>
 <h1 id="monitoring-all-built-container-with-portainerio">Monitoring all built container with <a href="https://portainer.io/">portainer.io</a></h1>
 <p>If you try <strong>docker ps -a</strong>, by default you will see the container of portainer-ce is running with the IP exposed to outside. The port 9000 by default, is for administrators logging to the management webpage.
-<img alt="Placeholder" src="/img/IoTStack/portainerce.png" width="800" />
+<img alt="Placeholder" src="../img/IoTStack/portainerce.png" width="800" />
 On your Web Browser (ie. Chrome, Firefox, etc). Enter <a href="https://localhost:9000/"><em>localhost:9000/</em></a>, this will open up the Web GUI of portainer-ce.
-<img alt="Placeholder" src="/img/IoTStack/webportainer.png" width="600" /></p>
+<img alt="Placeholder" src="../img/IoTStack/webportainer.png" width="600" /></p>
 <p>You will need to secure your admin account's password the first time you logging to the Portainer.
 After logging in, the existing images and running containers are all shown up for your monitoring. Portainer provides various command buttons so that you can easily manipulate the Stack to certain levels.
-<img alt="Placeholder" src="/img/IoTStack/portainercompleted.png" width="600" /></p>
+<img alt="Placeholder" src="../img/IoTStack/portainercompleted.png" width="600" /></p>
 <p>Basically, there are all the steps you need to operate when dealing with IOTStack for the first time, the result may different from time to time since the project IOTStack is actively updated by its contributors. By using the well prepared docker images of IOTStack, we save a lot of time from dealing with configuration. The heavy-lifting part is done for you so you can have more time spending on your <em>business logic</em> rather hours of configurating without knowing that they can work stably together.</p>
 <p>Thank you for reading my clumsy article, for more real life projects about IOTStack you can refer to this <a href="http://picopiece.com/"><em>Link</em></a>.</p>
 
