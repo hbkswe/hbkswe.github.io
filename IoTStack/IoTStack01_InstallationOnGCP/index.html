@@ -9,25 +9,23 @@
       
       
       
-        <link rel="prev" href="../cmake_03_build_a_shared_library_with_CMake/">
+        <link rel="prev" href="../../LevelDB/leveldb_01_hello_world/">
       
       
-        <link rel="next" href="../cmake_04_include_a_library_with_CMake/">
       
-      
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.5">
     
     
       
-        <title>Build a static library .a with CMake - Henry Le's blog</title>
+        <title>IoT Stack Installation On Ubuntu - Henry Le's blog</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#export-hello-world-as-a-static-library-a" class="md-skip">
+        <a href="#how-to-install-iotstack-on-ubuntu-and-monitor-all-containers-with-portainerio" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +86,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Henry Le&#39;s blog" class="md-header__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
+    <a href="../.." title="Henry Le&#39;s blog" class="md-header__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -108,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Build a static library .a with CMake
+              IoT Stack Installation On Ubuntu
             
           </span>
         </div>
@@ -207,7 +205,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -236,7 +234,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../cmake_01_hello_world/" class="md-tabs__link">
+        <a href="../../CMake/cmake_01_hello_world/" class="md-tabs__link">
           
   
   Tech Post
@@ -280,7 +278,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Henry Le&#39;s blog" class="md-nav__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
+    <a href="../.." title="Henry Le&#39;s blog" class="md-nav__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -298,7 +296,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -357,227 +355,35 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
-            
+  
+  
+    <a href="../../CMake/cmake_01_hello_world/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     CMake
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_1">
-            <span class="md-nav__icon md-icon"></span>
-            CMake
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cmake_01_hello_world/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Hello World
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cmake_02_separated_build_folder/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Separate build files and source code in CMake
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cmake_03_build_a_shared_library_with_CMake/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Build a shared library .so with CMake
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+        <span class="md-nav__icon md-icon"></span>
       
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Build a static library .a with CMake
-  </span>
+    </a>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Build a static library .a with CMake
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cmakeliststxt" class="md-nav__link">
-    <span class="md-ellipsis">
-      CMakeLists.txt
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#checking-the-library-content" class="md-nav__link">
-    <span class="md-ellipsis">
-      Checking the library content
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cmake_04_include_a_library_with_CMake/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Include a library to project with CMake
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cmake_extra01_functions_explanation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Some functions explanation in CMake
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -603,7 +409,7 @@
         
   
   
-    <a href="../leveldb_01_hello_world/" class="md-nav__link">
+    <a href="../../LevelDB/leveldb_01_hello_world/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -627,35 +433,74 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-      
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
-  
-  
-    <a href="../IoTStack01_InstallationOnGCP/" class="md-nav__link">
-      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     IoTStack
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            IoTStack
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
       
-        <span class="md-nav__icon md-icon"></span>
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
-    </a>
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    IoT Stack Installation On Ubuntu
+  </span>
   
 
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -685,62 +530,61 @@
                   
 
 
-<h1 id="export-hello-world-as-a-static-library-a">Export "Hello World" as a static library (.a)</h1>
-<p>The procedure to build static library is similar to build shared (dynamic) library as the previous post. But the only difference is CMakeLists.txt for generating <strong>.a</strong> library</p>
-<h2 id="cmakeliststxt">CMakeLists.txt</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp"># The minimum version that required to be able to read this CMakeList.txt​</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">cmake_minimum_required</span><span class="p">(</span><span class="n">VERSION</span><span class="w"> </span><span class="mf">2.8.12</span><span class="p">)</span><span class="err">​</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="cp"># Project name often named as the binary (executable) file​</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">project</span><span class="w"> </span><span class="p">(</span><span class="n">multilang_greetings</span><span class="p">)</span><span class="err">​</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="cp"># -------------------------------------​</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="cp"># declare the directories that store project&#39;s file headers (.h)​</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="cp"># -------------------------------------​</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">include_directories</span><span class="p">(</span><span class="n">include</span><span class="p">)</span><span class="err">​</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="cp"># -------------------------------------​</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="cp"># Adding the needed source files​</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="cp"># -------------------------------------​</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">file</span><span class="p">(</span><span class="n">GLOB</span><span class="w"> </span><span class="n">SOURCES</span><span class="w"> </span><span class="s">&quot;source/*.cpp&quot;</span><span class="p">)</span><span class="err">​</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="cp"># Define which source files are include into the library​</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="cp"># Type of the library is STATIC​</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="cp"># name of the library can be differed from project name​</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="n">add_library</span><span class="p">(</span><span class="n">greetings_encnvi</span><span class="w"> </span><span class="n">STATIC</span><span class="w"> </span><span class="n">$</span><span class="p">{</span><span class="n">SOURCES</span><span class="p">})</span>
+<h1 id="how-to-install-iotstack-on-ubuntu-and-monitor-all-containers-with-portainerio">How to install IOTStack on Ubuntu and monitor all containers with Portainer.io</h1>
+<blockquote>
+<p><em>"Hackers rarely have full knowledge of the technology stack of a target." - John McAfee</em></p>
+</blockquote>
+<p>Written by <strong>Henry Le</strong> on Oct 29, 2021</p>
+<p>As I recently start projects on the term and found that open-source community already built a very completed stack that can do almost everything one can imagine to do with IoT. So this article I would like to share how can IoTStack be installed on Ubuntu. I tested the process on both Google Cloud Platform and my local server, so I believe that this instruction works just fine with anyone else have interests in start to have fun with IOTStack.</p>
+<p>If you already have a RPI4 with you, the <a href="https://sensorsiot.github.io/IOTstack/Getting-Started/">instruction</a> of Andreas Spiess is a must-read.</p>
+<p>Firstly, making sure you already have everything packages updated and upgrades with:</p>
+<div class="highlight"><pre><span></span><code>sudo apt update
+sudo apt upgrade -y
 </code></pre></div>
-<p>Note:​</p>
-<p>Static library is defined in CMake by using <strong>STATIC</strong> keyword in <strong><em>add_library()</em></strong> to indicate the type of library that will be generated.</p>
-<p>Compare to generating .so library, generating .a file is not much different. The result is a <strong><em>.a</em></strong> library​</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gp">[root@cmake_practice_03_project_to_lib_a]# </span>tree<span class="w"> </span>-L<span class="w"> </span><span class="m">2</span>​
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="go">.​</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="go">├── build​</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="go">│   ├── CMakeCache.txt​</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="go">│   ├── CMakeFiles​</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="go">│   ├── cmake_install.cmake​</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="go">│   ├── libgreetings_encnvi.a​</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="go">│   └── Makefile​</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="go">├── CMakeLists.txt​</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="go">├── include​</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="go">│   ├── greetings_chinese.h​</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="go">│   ├── greetings_english.h​</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="go">│   └── greetings_vietnamese.h​</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="go">└── source​</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="go">    ├── greetings_chinese.cpp​</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="go">    ├── greetings_english.cpp​</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="go">    └── greetings_vietnamese.cpp​</span>
+<p>And also <em>curl</em> if you are not sure that the package is already installed</p>
+<div class="highlight"><pre><span></span><code>sudo apt install curl
 </code></pre></div>
-<h2 id="checking-the-library-content">Checking the library content</h2>
-<p>​
-To double check the linking inside the library, we can run the command ar –t as below​</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="gp">[root@build]# </span>ar<span class="w"> </span>-t<span class="w"> </span>libgreetings_encnvi.a​
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="go">greetings_vietnamese.cpp.o​</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="go">greetings_english.cpp.o​</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="go">greetings_chinese.cpp.o</span>
+<p>After having curl on your system, run the following command.</p>
+<div class="highlight"><pre><span></span><code>curl -fsSL https://raw.githubusercontent.com/SensorsIot/IOTstack/master/install.sh | bash
 </code></pre></div>
-<p>Source code can be found <a href="https://github.com/hieubkhcm/How_to_write_CMake/tree/main/cmake_practice_03_project_to_lib_a">HERE</a></p>
+<p>As default, a directory call /IOTStack will be created as your /home directory</p>
+<p><img alt="Placeholder" src="../../img/IoTStack/cd%20IOTStack.png" width="600" /></p>
+<p>As you may see, there are two script file, <em>install.sh</em> and <em>menu.sh</em>, <em>install.sh</em> is indeed the script file we curl from the link above. By invokinng <em>install.sh</em>, another directory tree of IOTStack will then created and the content will be cloned just as the same as the parent folder we see here.</p>
+<p>Now, its time to see what we have in menu</p>
+<div class="highlight"><pre><span></span><code>cd ~
+cd /IOTStack
+./menu.sh
+</code></pre></div>
+<p><img alt="Placeholder" src="../../img/IoTStack/menu.png" width="500" /></p>
+<p>Using your arrow keys to navigate around the menu, Build Stack is the first place we need to visit</p>
+<p>If you install IOTStack on a completely clean OS, without even docker installed, IOTStack will help you install the needed docker version.</p>
+<p><img alt="Placeholder" src="../../img/IoTStack/Screenshot%202021-10-27_162608.png" width="600" /></p>
+<p>If everything is running properly, a menu will be shown</p>
+<p><img alt="Placeholder" src="../../img/IoTStack/menushown.png" width="600" /></p>
+<p>Navigating aroung by arrow keys and choosing the docker images by typing space bar. In my case, I choose <strong>grafana, influxdb, mosquitto, nodered, portainer-ce, portainer-agent, postgres, tasmoadmin and wireguard</strong>.</p>
+<p>At this point, you finished choosing your <em>stack</em>, assuming this is the first time you install IOTStack, there are no images or containers running in you system yet. The next step is making eveything up and running.</p>
+<p>Choosing the second option in the menu.</p>
+<p><img alt="Placeholder" src="../../img/IoTStack/menushown.png" width="600" /></p>
+<p>There are several useful options in the <em>Docker Commands</em> menu, in this article I simply choosing <em>Start Stack</em>.
+The very first time building IOTStack might take a while because there are no existing images stored in your system yet. So for the first time, images of chosen option from the previous step will be automatically pulling to your system and then make it running.</p>
+<p>So far so good, the Stack after built up will look just as below, if there are any errors occur, error message will let you know while building up the stack.</p>
+<p><img alt="Placeholder" src="../../img/IoTStack/builtup.png" width="700" /></p>
+<p>To check whether the docker images was pulled to your system, enter the following command</p>
+<div class="highlight"><pre><span></span><code>docker images
+</code></pre></div>
+<p>To check the running containers</p>
+<div class="highlight"><pre><span></span><code>docker ps -a
+</code></pre></div>
+<h1 id="monitoring-all-built-container-with-portainerio">Monitoring all built container with <a href="https://portainer.io/">portainer.io</a></h1>
+<p>If you try <strong>docker ps -a</strong>, by default you will see the container of portainer-ce is running with the IP exposed to outside. The port 9000 by default, is for administrators logging to the management webpage.</p>
+<p><img alt="Placeholder" src="../../img/IoTStack/portainerce.png" width="800" /></p>
+<p>On your Web Browser (ie. Chrome, Firefox, etc). Enter <a href="https://localhost:9000/"><em>localhost:9000/</em></a>, this will open up the Web GUI of portainer-ce.</p>
+<p><img alt="Placeholder" src="../../img/IoTStack/webportainer.png" width="600" /></p>
+<p>You will need to secure your admin account's password the first time you logging to the Portainer.
+After logging in, the existing images and running containers are all shown up for your monitoring. Portainer provides various command buttons so that you can easily manipulate the Stack to certain levels.</p>
+<p><img alt="Placeholder" src="../../img/IoTStack/portainercompleted.png" width="600" /></p>
+<p>Basically, there are all the steps you need to operate when dealing with IOTStack for the first time, the result may different from time to time since the project IOTStack is actively updated by its contributors. By using the well prepared docker images of IOTStack, we save a lot of time from dealing with configuration. The heavy-lifting part is done for you so you can have more time spending on your <em>business logic</em> rather hours of configurating without knowing that they can work stably together.</p>
+<p>Thank you for reading my clumsy article, for more real life projects about IOTStack you can refer to this <a href="http://picopiece.com/"><em>Link</em></a>.</p>
 
 
 
@@ -863,10 +707,10 @@ To double check the linking inside the library, we can run the command ar –t a
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.prune", "toc.integrate", "toc.follow", "navigation.top", "header.autohide", "content.code.annotate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.prune", "toc.integrate", "toc.follow", "navigation.top", "header.autohide", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c18c5fb9.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c18c5fb9.min.js"></script>
       
     
   </body>

@@ -9,25 +9,21 @@
       
       
       
-        <link rel="prev" href="../cmake_04_include_a_library_with_CMake/">
       
       
-        <link rel="next" href="../leveldb_01_hello_world/">
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.5">
     
     
       
-        <title>Some functions explanation in CMake - Henry Le's blog</title>
+        <title>GitHub Flow, Git Flow, GitLab Flow - Henry Le's blog</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cmake-functions-some-explanation" class="md-skip">
+        <a href="#github-flow-git-flow-gitlab-flow" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +84,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Henry Le&#39;s blog" class="md-header__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
+    <a href="../.." title="Henry Le&#39;s blog" class="md-header__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -108,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Some functions explanation in CMake
+              GitHub Flow, Git Flow, GitLab Flow
             
           </span>
         </div>
@@ -207,7 +203,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -222,21 +218,17 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../cmake_01_hello_world/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../CMake/cmake_01_hello_world/" class="md-tabs__link">
           
   
   Tech Post
@@ -280,7 +272,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Henry Le&#39;s blog" class="md-nav__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
+    <a href="../.." title="Henry Le&#39;s blog" class="md-nav__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -298,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -315,8 +307,6 @@
       
   
   
-    
-  
   
   
     
@@ -327,12 +317,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -346,7 +336,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tech Post
@@ -357,179 +347,35 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
-            
+  
+  
+    <a href="../../CMake/cmake_01_hello_world/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     CMake
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_1">
-            <span class="md-nav__icon md-icon"></span>
-            CMake
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cmake_01_hello_world/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Hello World
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cmake_02_separated_build_folder/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Separate build files and source code in CMake
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cmake_03_build_a_shared_library_with_CMake/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Build a shared library .so with CMake
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cmake_03_build_a_static_library_with_CMake/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Build a static library .a with CMake
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cmake_04_include_a_library_with_CMake/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Include a library to project with CMake
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+        <span class="md-nav__icon md-icon"></span>
       
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Some functions explanation in CMake
-  </span>
+    </a>
   
 
-      </a>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -555,7 +401,7 @@
         
   
   
-    <a href="../leveldb_01_hello_world/" class="md-nav__link">
+    <a href="../../LevelDB/leveldb_01_hello_world/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -594,7 +440,7 @@
         
   
   
-    <a href="../IoTStack01_InstallationOnGCP/" class="md-nav__link">
+    <a href="../../IoTStack/IoTStack01_InstallationOnGCP/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -637,33 +483,39 @@
                   
 
 
-<h1 id="cmake-functions-some-explanation">CMake functions: some explanation</h1>
-<div class="highlight"><pre><span></span><code>make_minimum_required(VERSION 3.10)
-</code></pre></div>
-<p><strong>cmake_minimum_required()</strong> : the minimum version that CMake needs to be so that the CMakeLists.txt can be read. Check version of CMake in the system by <em>cmake --version</em></p>
-<div class="highlight"><pre><span></span><code>project(Tutorial VERSION 1.0)
-</code></pre></div>
-<p><strong>project() :</strong> giving the name to the project, version of a project can be modified here</p>
-<div class="highlight"><pre><span></span><code>set(CMAKE_CXX_STANDARD 11) set(CMAKE_CXX_STANDARD_REQUIRED True)
-</code></pre></div>
-<p><strong>set()</strong>: some kind of configuration or setting a variable, with CMake</p>
-<div class="highlight"><pre><span></span><code>option(USE_MYMATH &quot;use tutorial provided math implementataion&quot; ON)
-</code></pre></div>
-<p><strong>option():</strong> declare options for Dev/User to be able to change build options quickly, for example, different os or use different APIs depending on the environment</p>
-<div class="highlight"><pre><span></span><code>configure_file([TutorialConfig.h.in](http://tutorialconfig.h.in/) TutorialConfig.h)
-</code></pre></div>
-<p><strong>configure_file()</strong> : pass environment variables from outside the code into the code, for example, VERSION 1.0 from project(), passed as @Tutorial_VERSION_MAJOR@ → via macro and header pass the value to Tutorial_VERSION_MAJOR inside the code, after build and run, you will see the Version magically appear</p>
-<p><strong>add_subdirectory()</strong> : this command to add a folder during the build process to find a library</p>
-<p><strong>list(APPEND a_variable):</strong> append a variable to a list, useful when adding a bundle of sourcecode to build a targer</p>
-<div class="highlight"><pre><span></span><code>add_executable(Tutorial tutorial.cxx)
-</code></pre></div>
-<p><strong>add_executable()</strong> : Simply understand it as a way to declare the relationship between the binary named Tutorial and the related source files</p>
-<div class="highlight"><pre><span></span><code>target_link_libraries(Tutorial PUBLIC ${EXTRA_LIBS})
-</code></pre></div>
-<p><strong>target_link_libraries</strong>(): declare the target that is called this Tutorial that needs the libs in list of libs in EXTRA_LIBS.</p>
-<div class="highlight"><pre><span></span><code>target_include_directories(Tutorial PUBLIC &quot;${PROJECT_BINARY_DIR}&quot; ${EXTRA_INCLUDES} )
-</code></pre></div>
-<p><strong>target_include_directories</strong>() : Similar to the above, this command to declare which directories are relevant (containing some libs).</p>
+<h1 id="github-flow-git-flow-gitlab-flow">GitHub Flow, Git Flow, GitLab Flow</h1>
+<blockquote>
+<p><strong>GitHub Flow</strong>
+</p>
+</blockquote>
+<p><img alt="Untitled" src="../GitHub%20Flow%2C%20Git%20Flow%2C%20GitLab%20Flow%20b9d0b4b87e0443cb87b4c234fdf6c7e4/Untitled.png" /></p>
+<p><strong>Circle</strong> = Hình tròn = commit</p>
+<p>Pull Request (GitHub) = Merge Request (GitLab) → automatic trigger Testing (!)</p>
+<p>All the the changes are tested and confirmed → merge to main branch () </p>
+<blockquote>
+<p><strong>Git Flow</strong></p>
+<p>../img
+<img alt="Untitled" src="../GitHub%20Flow%2C%20Git%20Flow%2C%20GitLab%20Flow%20b9d0b4b87e0443cb87b4c234fdf6c7e4/Untitled%201.png" /></p>
+</blockquote>
+<p>Git Flow assume that there is a long-lived <strong>Develop Branch</strong> that always there parallel with the main branch</p>
+<p>Lúc nào Release thì sẽ đẩy qua nhánh <strong>Release Branch</strong> cho người ta (hoặc mình) testing trên nhánh đó. Có bug cần fix thì fix, xong rồi merge ngược lại vô nhánh <strong>dev</strong> (để còn dev tiếp), và merge vô nhánh <strong>main</strong> để còn ra product.</p>
+<p>Xui xui mà <strong>main</strong> branch vẫn còn có bug thì ra nhánh <strong>hotfix</strong>, fix xong rồi merge lại vô <strong>main</strong> và <strong>dev</strong></p>
+<blockquote>
+<p><strong>Variation 1 - Environment Branches (Flow of LW, thay vì gọi là Main thì lại gọi là Develop)</strong>
+</p>
+</blockquote>
+<p><img alt="Untitled" src="../GitHub%20Flow%2C%20Git%20Flow%2C%20GitLab%20Flow%20b9d0b4b87e0443cb87b4c234fdf6c7e4/Untitled%202.png" /></p>
+<p>Long-lived production branch</p>
+<p><strong>Developer</strong> làm việc tại nhánh Main, phát triển chức nắng mới tại nhánh Feature</p>
+<p>GitLab dùng thuật ngữ <strong>Merge Request,</strong> fix và hotfix đều được thực hiện tại <strong>upstream</strong>, là nhành main, <strong>ko hotfix trực tiếp trên nhánh production</strong></p>
+<blockquote>
+<p><strong>Variation 2 : Release Branches - to Open Source world</strong>
+</p>
+</blockquote>
+<p><img alt="Untitled" src="../GitHub%20Flow%2C%20Git%20Flow%2C%20GitLab%20Flow%20b9d0b4b87e0443cb87b4c234fdf6c7e4/Untitled%203.png" /></p>
+<p>Developer làm việc tại nhánh <strong>Feature</strong>, owner sẽ merge code và phát hành code theo từng đợt tại nhánh <strong>Release.</strong> </p>
+<p>Bug được xử lý tại upstream (là nhánh <strong>main</strong> á, main là thượng nguồn mà). </p>
+<p>Release xong mà ko dc maintain nữa thì nhánh đó sẽ sống hoài và cứ vậy luôn, kiểu như thánh orphan</p>
 
 
 
@@ -786,10 +638,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.prune", "toc.integrate", "toc.follow", "navigation.top", "header.autohide", "content.code.annotate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.prune", "toc.integrate", "toc.follow", "navigation.top", "header.autohide", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c18c5fb9.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c18c5fb9.min.js"></script>
       
     
   </body>
