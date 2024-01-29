@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../../IoTStack/IoTStack01_InstallationOnGCP/">
+      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>GitHub Flow, Git Flow, GitLab Flow - Henry Le's blog</title>
+        <title>2023 Year-end dinner party 🎊 - Henry Le's blog</title>
       
     
     
@@ -68,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#github-flow-git-flow-gitlab-flow" class="md-skip">
+        <a href="#2023-year-end-dinner-party" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GitHub Flow, Git Flow, GitLab Flow
+              2023 Year-end dinner party 🎊
             
           </span>
         </div>
@@ -238,6 +240,26 @@
     
   
 
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Life in Taiwan
+
+        </a>
+      </li>
     
   
 
@@ -467,6 +489,86 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Life in Taiwan
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Life in Taiwan
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2023 Year-end dinner party 🎊
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -483,39 +585,13 @@
                   
 
 
-<h1 id="github-flow-git-flow-gitlab-flow">GitHub Flow, Git Flow, GitLab Flow</h1>
-<blockquote>
-<p><strong>GitHub Flow</strong>
-</p>
-</blockquote>
-<p><img alt="Untitled" src="../GitHub%20Flow%2C%20Git%20Flow%2C%20GitLab%20Flow%20b9d0b4b87e0443cb87b4c234fdf6c7e4/Untitled.png" /></p>
-<p><strong>Circle</strong> = Hình tròn = commit</p>
-<p>Pull Request (GitHub) = Merge Request (GitLab) → automatic trigger Testing (!)</p>
-<p>All the the changes are tested and confirmed → merge to main branch () </p>
-<blockquote>
-<p><strong>Git Flow</strong></p>
-<p>../img
-<img alt="Untitled" src="../GitHub%20Flow%2C%20Git%20Flow%2C%20GitLab%20Flow%20b9d0b4b87e0443cb87b4c234fdf6c7e4/Untitled%201.png" /></p>
-</blockquote>
-<p>Git Flow assume that there is a long-lived <strong>Develop Branch</strong> that always there parallel with the main branch</p>
-<p>Lúc nào Release thì sẽ đẩy qua nhánh <strong>Release Branch</strong> cho người ta (hoặc mình) testing trên nhánh đó. Có bug cần fix thì fix, xong rồi merge ngược lại vô nhánh <strong>dev</strong> (để còn dev tiếp), và merge vô nhánh <strong>main</strong> để còn ra product.</p>
-<p>Xui xui mà <strong>main</strong> branch vẫn còn có bug thì ra nhánh <strong>hotfix</strong>, fix xong rồi merge lại vô <strong>main</strong> và <strong>dev</strong></p>
-<blockquote>
-<p><strong>Variation 1 - Environment Branches (Flow of LW, thay vì gọi là Main thì lại gọi là Develop)</strong>
-</p>
-</blockquote>
-<p><img alt="Untitled" src="../GitHub%20Flow%2C%20Git%20Flow%2C%20GitLab%20Flow%20b9d0b4b87e0443cb87b4c234fdf6c7e4/Untitled%202.png" /></p>
-<p>Long-lived production branch</p>
-<p><strong>Developer</strong> làm việc tại nhánh Main, phát triển chức nắng mới tại nhánh Feature</p>
-<p>GitLab dùng thuật ngữ <strong>Merge Request,</strong> fix và hotfix đều được thực hiện tại <strong>upstream</strong>, là nhành main, <strong>ko hotfix trực tiếp trên nhánh production</strong></p>
-<blockquote>
-<p><strong>Variation 2 : Release Branches - to Open Source world</strong>
-</p>
-</blockquote>
-<p><img alt="Untitled" src="../GitHub%20Flow%2C%20Git%20Flow%2C%20GitLab%20Flow%20b9d0b4b87e0443cb87b4c234fdf6c7e4/Untitled%203.png" /></p>
-<p>Developer làm việc tại nhánh <strong>Feature</strong>, owner sẽ merge code và phát hành code theo từng đợt tại nhánh <strong>Release.</strong> </p>
-<p>Bug được xử lý tại upstream (là nhánh <strong>main</strong> á, main là thượng nguồn mà). </p>
-<p>Release xong mà ko dc maintain nữa thì nhánh đó sẽ sống hoài và cứ vậy luôn, kiểu như thánh orphan</p>
+<h1 id="2023-year-end-dinner-party">2023 Year-end dinner party 🎊</h1>
+<p>As we wind down the year, I find myself reflecting on some quirks of our workplace culture at LatticeWorkInc. For the past three years, we've skipped our annual shindig, leaving us all feeling a bit disconnected. But hey, it's given me a chance to think back on my own journey here as a software engineer.</p>
+<p>You know, it's funny how our team is the only one that has to give a weekly report directly to the big boss, Pantas Sutardja. At first, it felt like added pressure, but now it's just part of the routine—a chance to catch up and learn a thing or two.</p>
+<p>One big lesson I've picked up from these weekly powwows is that progress isn't about huge leaps; it's about small, consistent improvements every day. Mr. Sutardja's been drilling that into us since day one, and you know what? It works. I've seen it in my own work, how starting small and staying consistent pays off in the long run.</p>
+<p>Looking back, sure, we've missed out on some year-end fun, but these weekly check-ins have taught me a lot about perseverance and the power of steady progress. So here's to keeping at it, learning from the routine, and seeing where the journey takes us next.</p>
+<p>Cheers to progress and the everyday grind of engineering life!</p>
+<p><img alt="MicrosoftTeams.jpg" src="MicrosoftTeams.jpg" /></p>
 
 
 
