@@ -9,28 +9,28 @@
       
       
       
-        <link rel="prev" href="../cmake_02_separated_build_folder/">
+        <link rel="prev" href="../../SRS%20Object%20integration%20to%20handle%20RTMP/SRS%20object%20integration%20to%20handle%20RTMP/">
       
       
-        <link rel="next" href="../cmake_04_build_a_static_library_with_CMake/">
+        <link rel="next" href="../../../Btrfs/understand%20qgroup/understanding_qgroup/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
     
     
       
-        <title>Build a shared library .so with CMake - Henry Le's blog</title>
+        <title>Shared live media plane - Henry Le's blog</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#export-hello-world-as-a-shared-library-so" class="md-skip">
+        <a href="#shared-live-media-plane-trong-srs" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Henry Le&#39;s blog" class="md-header__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
+    <a href="../../.." title="Henry Le&#39;s blog" class="md-header__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Build a shared library .so with CMake
+              Shared live media plane
             
           </span>
         </div>
@@ -205,7 +205,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -237,7 +237,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../Cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/" class="md-tabs__link">
+        <a href="../../../Cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/" class="md-tabs__link">
           
   
   
@@ -269,7 +269,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../LifeInCanada/Niagara%20Fall%202025%201d5673d139b580419d34ecdb2b41c37f/" class="md-tabs__link">
+        <a href="../../../LifeInCanada/Niagara%20Fall%202025%201d5673d139b580419d34ecdb2b41c37f/" class="md-tabs__link">
           
   
   
@@ -294,7 +294,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Biking/Bike%20I%20Ride/Bike%20I%20Ride%201d5673d139b580e0bc64eae6917664ec/" class="md-tabs__link">
+        <a href="../../../Biking/Bike%20I%20Ride/Bike%20I%20Ride%201d5673d139b580e0bc64eae6917664ec/" class="md-tabs__link">
           
   
   
@@ -316,7 +316,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Typing/WordPerMinute/First%20time%20100%20wpm/" class="md-tabs__link">
+        <a href="../../../Typing/WordPerMinute/First%20time%20100%20wpm/" class="md-tabs__link">
           
   
   
@@ -360,7 +360,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Henry Le&#39;s blog" class="md-nav__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
+    <a href="../../.." title="Henry Le&#39;s blog" class="md-nav__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -378,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -547,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/" class="md-nav__link">
+      <a href="../../../Cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/" class="md-nav__link">
         
   
   
@@ -575,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cloudflare/Cloudflared%20-%20add%20tunnel/Cloudflared%20-%20add%20tunnel/" class="md-nav__link">
+      <a href="../../../Cloudflare/Cloudflared%20-%20add%20tunnel/Cloudflared%20-%20add%20tunnel/" class="md-nav__link">
         
   
   
@@ -608,6 +608,8 @@
                 
   
   
+    
+  
   
   
     
@@ -633,11 +635,11 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
@@ -658,7 +660,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -676,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SRS/Load%20as%20Makefile%20Project/Load%20Makefile%20project/" class="md-nav__link">
+      <a href="../../Load%20as%20Makefile%20Project/Load%20Makefile%20project/" class="md-nav__link">
         
   
   
@@ -704,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SRS/SRS%20Object%20integration%20to%20handle%20RTMP/SRS%20object%20integration%20to%20handle%20RTMP/" class="md-nav__link">
+      <a href="../../SRS%20Object%20integration%20to%20handle%20RTMP/SRS%20object%20integration%20to%20handle%20RTMP/" class="md-nav__link">
         
   
   
@@ -729,10 +731,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../SRS/Shared%20live%20media%20plane/shared%20live%20media%20plane%20in%20srs/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared live media plane
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -748,6 +775,74 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shared-live-media-plane-trong-srs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared live media plane trong SRS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shared live media plane trong SRS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sau-kien-truc-oo-thi-ta-xem-business-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sau kiến trúc OO thì ta xem business domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-khong-chi-la-so-o-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Domain không chỉ là sơ đồ class
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-leve-hai-core-object-quay-lai-oo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code leve Hai core object (quay lại OO)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -829,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Btrfs/understand%20qgroup/understanding_qgroup/" class="md-nav__link">
+      <a href="../../../Btrfs/understand%20qgroup/understanding_qgroup/" class="md-nav__link">
         
   
   
@@ -926,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../OatppClientDemo/oatpp_client_demo/" class="md-nav__link">
+      <a href="../../../OatppClientDemo/oatpp_client_demo/" class="md-nav__link">
         
   
   
@@ -1023,7 +1118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mkdocs/Using%20Notion%20a%20Blog%20Editor%2064e03300222542059af5d85a4ded90e9/" class="md-nav__link">
+      <a href="../../../Mkdocs/Using%20Notion%20a%20Blog%20Editor%2064e03300222542059af5d85a4ded90e9/" class="md-nav__link">
         
   
   
@@ -1056,8 +1151,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1089,11 +1182,11 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
           <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
@@ -1114,7 +1207,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1132,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cmake_01_hello_world/" class="md-nav__link">
+      <a href="../../../CMake/cmake_01_hello_world/" class="md-nav__link">
         
   
   
@@ -1160,7 +1253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cmake_02_separated_build_folder/" class="md-nav__link">
+      <a href="../../../CMake/cmake_02_separated_build_folder/" class="md-nav__link">
         
   
   
@@ -1185,37 +1278,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Build a shared library .so with CMake
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../CMake/cmake_03_build_a_shared_library_with_CMake/" class="md-nav__link">
         
   
   
@@ -1231,136 +1297,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#scenario" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scenario:​
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#result" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Result:​
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#source-tree" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Source tree
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#header-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Header files
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#source-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Source files
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cmakeliststxt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CMakeLists.txt
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cmakeliststxt_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CMakeLists.txt
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Build
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#checking-the-library-with-ldd" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Checking the library with ldd
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conlusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conlusion
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1373,7 +1309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cmake_04_build_a_static_library_with_CMake/" class="md-nav__link">
+      <a href="../../../CMake/cmake_04_build_a_static_library_with_CMake/" class="md-nav__link">
         
   
   
@@ -1401,7 +1337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cmake_05_include_a_library_with_CMake/" class="md-nav__link">
+      <a href="../../../CMake/cmake_05_include_a_library_with_CMake/" class="md-nav__link">
         
   
   
@@ -1429,7 +1365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cmake_extra01_functions_explanation/" class="md-nav__link">
+      <a href="../../../CMake/cmake_extra01_functions_explanation/" class="md-nav__link">
         
   
   
@@ -1526,7 +1462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LevelDB/leveldb_01_hello_world/" class="md-nav__link">
+      <a href="../../../LevelDB/leveldb_01_hello_world/" class="md-nav__link">
         
   
   
@@ -1623,7 +1559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../IoTStack/IoTStack01_InstallationOnGCP/" class="md-nav__link">
+      <a href="../../../IoTStack/IoTStack01_InstallationOnGCP/" class="md-nav__link">
         
   
   
@@ -1720,7 +1656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C%2B%2B/TuHocCpp0a696932184a476cb95c215fa83ac421/" class="md-nav__link">
+      <a href="../../../C%2B%2B/TuHocCpp0a696932184a476cb95c215fa83ac421/" class="md-nav__link">
         
   
   
@@ -1795,7 +1731,7 @@
   
   
   
-    <a href="../../LifeInCanada/Niagara%20Fall%202025%201d5673d139b580419d34ecdb2b41c37f/" class="md-nav__link">
+    <a href="../../../LifeInCanada/Niagara%20Fall%202025%201d5673d139b580419d34ecdb2b41c37f/" class="md-nav__link">
       
   
   
@@ -1854,7 +1790,7 @@
   
   
   
-    <a href="../../Biking/Bike%20I%20Ride/Bike%20I%20Ride%201d5673d139b580e0bc64eae6917664ec/" class="md-nav__link">
+    <a href="../../../Biking/Bike%20I%20Ride/Bike%20I%20Ride%201d5673d139b580e0bc64eae6917664ec/" class="md-nav__link">
       
   
   
@@ -1911,7 +1847,7 @@
   
   
   
-    <a href="../../Typing/WordPerMinute/First%20time%20100%20wpm/" class="md-nav__link">
+    <a href="../../../Typing/WordPerMinute/First%20time%20100%20wpm/" class="md-nav__link">
       
   
   
@@ -1955,138 +1891,46 @@
 
 
 
-<h1 id="export-hello-world-as-a-shared-library-so">Export "Hello World" as a shared library (.so)</h1>
-<h2 id="scenario">Scenario:​</h2>
-<p>We want "hello world" is exported as a library to other project's usage​</p>
-<h2 id="result">Result:​</h2>
-<p>Using CMake to export the "hello world" project to 2 types of library, dynamic library and static lirary</p>
-<h2 id="source-tree">Source tree</h2>
-<p>Lets firstly have a look at what we have for the source tree. The files structure is similar to the previous post.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="na">[root@base06</span><span class="w"> </span><span class="s">cmake_practice_03_project_to_lib_so]# tree</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="na">.</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="na">├──</span><span class="w"> </span><span class="s">build​</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="na">├──</span><span class="w"> </span><span class="s">CMakeLists.txt​</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="na">├──</span><span class="w"> </span><span class="s">include​</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="na">│</span><span class="w">   </span><span class="s">├── greetings_chinese.h​</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="na">│</span><span class="w">   </span><span class="s">├── greetings_english.h​</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="na">│</span><span class="w">   </span><span class="s">└── greetings_vietnamese.h​</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="na">└──</span><span class="w"> </span><span class="s">source​</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="na">├──</span><span class="w"> </span><span class="s">greetings_chinese.cpp​</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="na">├──</span><span class="w"> </span><span class="s">greetings_english.cpp​</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="na">└──</span><span class="w"> </span><span class="s">greetings_vietnamese.cpp</span>
-</code></pre></div>
-<p>Content of the each file is as follow</p>
-<h2 id="header-files">Header files</h2>
-<p>The same as previous post</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">greetings_english.h</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="c1">​</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kt">void</span><span class="w">  </span><span class="nf">greeting_en</span><span class="p">();</span><span class="err">​</span>
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">greetings_chinese.h</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="c1">​</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kt">void</span><span class="w">  </span><span class="nf">greeting_cn</span><span class="p">();</span><span class="err">​</span>
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">greetings_vietnamese.h</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="c1">​</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="kt">void</span><span class="w">  </span><span class="nf">greeting_vi</span><span class="p">();</span><span class="err">​</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="source-files">Source files</h2>
-<p>The same as previous post</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">greetings_english.cpp</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span>
-<span class="normal"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="c1">​</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">greeting_en</span><span class="p">()</span><span class="err">​</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="p">{</span><span class="err">​</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="err">​</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="p">}</span>
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">greetings_english.cpp</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span>
-<span class="normal"><a href="#__codelineno-5-4">4</a></span>
-<span class="normal"><a href="#__codelineno-5-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="c1">​</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">greeting_cn</span><span class="p">()</span><span class="err">​</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="p">{</span><span class="err">​</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Nihao!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="err">​</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="p">}</span>
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">greetings_english.cpp</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span>
-<span class="normal"><a href="#__codelineno-6-3">3</a></span>
-<span class="normal"><a href="#__codelineno-6-4">4</a></span>
-<span class="normal"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="c1">​</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">greeting_vi</span><span class="p">()</span><span class="err">​</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="p">{</span><span class="err">​</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Xin chao!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="err">​</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="p">}</span><span class="err">​</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="cmakeliststxt">CMakeLists.txt</h2>
-<p>There is not much different from the post to the previous, but only we do not have main() function in any source files because we are building a library.</p>
-<h2 id="cmakeliststxt_1">CMakeLists.txt</h2>
-<p><em>CMakeLists.txt</em> for generating .so library​</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="cp"># The minimum version that required to be able to read this CMakeList.txt​</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">cmake_minimum_required</span><span class="p">(</span><span class="n">VERSION</span><span class="w"> </span><span class="mf">2.8.12</span><span class="p">)</span><span class="err">​</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="cp"># Project name often named as the binary (executable) file​</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">project</span><span class="w"> </span><span class="p">(</span><span class="n">multilang_greetings</span><span class="p">)</span><span class="err">​</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="cp"># -------------------------------------​</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="cp"># declare the directories that store project&#39;s file headers (.h)​</span>
-<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="cp"># -------------------------------------​</span>
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="n">include_directories</span><span class="p">(</span><span class="n">include</span><span class="p">)</span><span class="err">​</span>
-<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="cp"># -------------------------------------​</span>
-<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="cp"># Adding the needed source files​</span>
-<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="cp"># -------------------------------------​</span>
-<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="n">file</span><span class="p">(</span><span class="n">GLOB</span><span class="w"> </span><span class="n">SOURCES</span><span class="w"> </span><span class="s">&quot;source/*.cpp&quot;</span><span class="p">)</span><span class="err">​</span>
-<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="cp"># Define which source files are include into the library​</span>
-<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="cp"># Type of the library is SHARED​</span>
-<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="cp"># name of the library can be differed from project name​</span>
-<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="cp"># -------------------------------------------​</span>
-<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="n">add_library</span><span class="p">(</span><span class="n">greetings_encnvi</span><span class="w"> </span><span class="n">SHARED</span><span class="w"> </span><span class="n">$</span><span class="p">{</span><span class="n">SOURCES</span><span class="p">})</span>
-</code></pre></div>
-<p><strong>Note:​</strong></p>
-<p>A dynamic library or a share object is shared between processes in system at runtime. CMake uses <strong>SHARED</strong> keyword in add_library() to indicate the type of library that will be generated.</p>
-<h2 id="build">Build</h2>
-<p>Run CMake and is as the same as previous post</p>
-<p>​We change the directory to build folder and run the command <strong><em>cmake ..​</em></strong>
-​
-After build the project, the <strong>.so</strong> library is the file that we expect as the result.​</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">[</span><span class="n">root</span><span class="err">@</span><span class="w"> </span><span class="n">cmake_practice_03_project_to_lib_so</span><span class="p">]</span><span class="err">#</span><span class="w"> </span><span class="n">tree</span><span class="w"> </span><span class="o">-</span><span class="n">L</span><span class="w"> </span><span class="mi">2</span><span class="err">​</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="p">.</span><span class="err">​</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="err">├──</span><span class="w"> </span><span class="n">build</span><span class="err">​</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">CMakeCache</span><span class="p">.</span><span class="n">txt</span><span class="err">​</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">CMakeFiles</span><span class="err">​</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">cmake_install</span><span class="p">.</span><span class="n">cmake</span><span class="err">​</span>
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">libgreetings_encnvi</span><span class="p">.</span><span class="n">so</span><span class="err">​</span>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">Makefile</span><span class="err">​</span>
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="err">├──</span><span class="w"> </span><span class="n">CMakeLists</span><span class="p">.</span><span class="n">txt</span><span class="err">​</span>
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="err">├──</span><span class="w"> </span><span class="n">include</span><span class="err">​</span>
-<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">greetings_chinese</span><span class="p">.</span><span class="n">h</span><span class="err">​</span>
-<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="n">greetings_english</span><span class="p">.</span><span class="n">h</span><span class="err">​</span>
-<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="n">greetings_vietnamese</span><span class="p">.</span><span class="n">h</span><span class="err">​</span>
-<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="err">└──</span><span class="w"> </span><span class="n">source</span><span class="err">​</span>
-<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">greetings_chinese</span><span class="p">.</span><span class="n">cpp</span><span class="err">​</span>
-<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">greetings_english</span><span class="p">.</span><span class="n">cpp</span><span class="err">​</span>
-<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">    </span><span class="err">└──</span><span class="w"> </span><span class="n">greetings_vietnamese</span><span class="p">.</span><span class="n">cpp</span><span class="err">​</span>
-</code></pre></div>
-<p>​The file <strong>libgreetings_encnvi.so​</strong> is generated in <em>build</em></p>
-<h2 id="checking-the-library-with-ldd">Checking the library with ldd</h2>
-<p>To double check the linking inside the library, we can run the command <em>ldd</em> as below</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="gp">[root@base06 build]# </span>ldd<span class="w"> </span>libgreetings_encnvi.so​
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="go">        linux-vdso.so.1 =&gt;  (0x00007ffc957c4000)​</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="go">        libstdc++.so.6 =&gt; /lib64/libstdc++.so.6 (0x00007f8f33d2f000)​</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="go">        libm.so.6 =&gt; /lib64/libm.so.6 (0x00007f8f33a2d000)​</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="go">        libc.so.6 =&gt; /lib64/libc.so.6 (0x00007f8f33449000)​</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="go">        /lib64/ld-linux-x86-64.so.2 (0x00007f8f34239000)​</span>
-</code></pre></div>
-<h2 id="conlusion">Conlusion</h2>
-<p>We have going through all the steps to have the library build project, as the result is the library that built with the linking is checked.</p>
-<p>Source code can be found <a href="https://github.com/hieubkhcm/How_to_write_CMake/tree/main/cmake_practice_03_project_to_lib_so">HERE</a></p>
+  <h1>Shared live media plane</h1>
+
+<h2 id="shared-live-media-plane-trong-srs">Shared live media plane trong SRS</h2>
+<h3 id="sau-kien-truc-oo-thi-ta-xem-business-domain">Sau kiến trúc OO thì ta xem business domain</h3>
+<ul>
+<li>
+<p>Sau khi trace xong flow accept → connection → transport → state-threads → RTMP, trọng điểm tiếp theo ở mức kiến trúc mình thấy đáng học tiếp là “stream identity + shared live path”. Mình không quan tâm lắm tới data chunk vì protocol thì vừa nhiều vừa chi li quá, nào công việc phải đụng thì coi sau</p>
+</li>
+<li>
+<p>Ở mức business domain rất đáng học thì nên là trace hiểu được một live flow dùng chung trong process.</p>
+</li>
+</ul>
+<h3 id="domain-khong-chi-la-so-o-class">Domain không chỉ là sơ đồ class</h3>
+<ul>
+<li>
+<p>Tiếp cận ở khia cạnh domain đây không phải kiểu object như "has-a" mà mình hay dùng để coi cấu trúc OO. Thay vào đó cái mình muốn nắm được là trọng tâm mô hình nghiệp vụ: stream được định danh ra sao, ai tạo và giữ instance (SrsLiveSource thông qua manager), ai subscribe (consumer / nhánh play), và lifecycle khi publisher ngắt — vì mình thấy mọi listener và protocol trong SRS cuối cùng đều phục vụ tầng đó.</p>
+</li>
+<li>
+<p>Chuẩn chỉ thì vẫn phải là có manager / source / consumer; điều cần chú ý là trách nhiệm và trạng thái dùng chung, không chỉ tên class.</p>
+</li>
+</ul>
+<h3 id="code-leve-hai-core-object-quay-lai-oo">Code leve Hai core object (quay lại OO)</h3>
+<p>SrsLiveSource — đây là lõi của một stream: gom media, trạng thái publish và các subscriber cho một định danh stream.
+SrsLiveSourceManager — lõi của hệ thống lo cho việc đăng ký: map định danh → SrsLiveSource, fetch_or_create, và pool lifecycle.</p>
+<p>Code flow: Manager → Source → Consumer</p>
+<ol>
+<li>
+<p>Registry toàn cục — Lúc global init, SRS tạo _srs_sources (SrsLiveSourceManager). Đây là điểm anchor cho live RTMP và nhiều đường vào khác.</p>
+</li>
+<li>
+<p>Một stream, một source — Manager giữ pool_ (key → SrsLiveSource) và API fetch_or_create / fetch. Cùng một stream (theo ISrsRequest) tái sử dụng cùng một object source.</p>
+</li>
+<li>
+<p>Bridge từ connection — Trong SrsRtmpConn, sau khi có req, gọi live_sources_-&gt;fetch_or_create, rồi rẽ publish vs play. Đó là chỗ mà RTMP conn gắn vào shared live path: play đi vào playing(live_source) (và consumer bên dưới); publish đi nhánh khác nhưng cùng live_source. Chi tiết sở hữu / subscribe nằm trong mỗi nhánh và trong SrsLiveSource / SrsLiveConsumer (coi ví dụ trong srs_app_rtmp_source.hpp).</p>
+</li>
+<li>
+<p>Lifecycle — trace disconnect, boundary của app thì vẫn là socket thoai: chủ yếu là mình xem nhánh publish dọn source, hủy publisher và consumer thế nào — trả lời cho câu hỏi đó là nếu publisher tạch thì stream còn hay tạch theo</p>
+</li>
+</ol>
+<p>Túm lại: shared live media plane là nơi hội tụ / khách hàng thực sự mà cả cấu trúc cần phục vụ. Protocol/decode cuối cùng đều hướng về một manager - một source cho mỗi stream identity, và nhiều consumer trên cùng source đó (share source).</p>
 
 
 
@@ -2345,10 +2189,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.prune", "navigation.indexes", "navigation.sections", "toc.integrate", "toc.follow", "navigation.top", "header.autohide", "content.code.annotate", "search.suggest", "search.highlight", "header.social"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.prune", "navigation.indexes", "navigation.sections", "toc.integrate", "toc.follow", "navigation.top", "header.autohide", "content.code.annotate", "search.suggest", "search.highlight", "header.social"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
