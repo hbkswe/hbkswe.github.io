@@ -9,28 +9,28 @@
       
       
       
-        <link rel="prev" href="../../CMake/cmake_extra01_functions_explanation/">
+        <link rel="prev" href="../../Shared%20live%20media%20plane/shared%20live%20media%20plane%20in%20srs/">
       
       
-        <link rel="next" href="../../IoTStack/IoTStack01_InstallationOnGCP/">
+        <link rel="next" href="../../../Btrfs/understand%20qgroup/understanding_qgroup/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
     
     
       
-        <title>Example with levelDB - Henry Le's blog</title>
+        <title>SRS Shared Live Source - Core business logic - Henry Le's blog</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#an-example-of-using-leveldb" class="md-skip">
+        <a href="#srs-shared-live-source-core-business-logic" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Henry Le&#39;s blog" class="md-header__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
+    <a href="../../.." title="Henry Le&#39;s blog" class="md-header__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Example with levelDB
+              SRS Shared Live Source - Core business logic
             
           </span>
         </div>
@@ -205,7 +205,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -237,7 +237,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../Cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/" class="md-tabs__link">
+        <a href="../../../Cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/" class="md-tabs__link">
           
   
   
@@ -269,7 +269,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../LifeInCanada/Niagara%20Fall%202025%201d5673d139b580419d34ecdb2b41c37f/" class="md-tabs__link">
+        <a href="../../../LifeInCanada/Niagara%20Fall%202025%201d5673d139b580419d34ecdb2b41c37f/" class="md-tabs__link">
           
   
   
@@ -294,7 +294,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Biking/Bike%20I%20Ride/Bike%20I%20Ride%201d5673d139b580e0bc64eae6917664ec/" class="md-tabs__link">
+        <a href="../../../Biking/Bike%20I%20Ride/Bike%20I%20Ride%201d5673d139b580e0bc64eae6917664ec/" class="md-tabs__link">
           
   
   
@@ -316,7 +316,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Typing/WordPerMinute/First%20time%20100%20wpm/" class="md-tabs__link">
+        <a href="../../../Typing/WordPerMinute/First%20time%20100%20wpm/" class="md-tabs__link">
           
   
   
@@ -360,7 +360,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Henry Le&#39;s blog" class="md-nav__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
+    <a href="../../.." title="Henry Le&#39;s blog" class="md-nav__button md-logo" aria-label="Henry Le's blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -378,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -547,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/" class="md-nav__link">
+      <a href="../../../Cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/Mua%20domain%20t%E1%BA%A1i%20cloudflare/" class="md-nav__link">
         
   
   
@@ -575,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cloudflare/Cloudflared%20-%20add%20tunnel/Cloudflared%20-%20add%20tunnel/" class="md-nav__link">
+      <a href="../../../Cloudflare/Cloudflared%20-%20add%20tunnel/Cloudflared%20-%20add%20tunnel/" class="md-nav__link">
         
   
   
@@ -608,6 +608,8 @@
                 
   
   
+    
+  
   
   
     
@@ -635,11 +637,11 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
@@ -660,7 +662,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -678,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SRS/Load%20as%20Makefile%20Project/Load%20Makefile%20project/" class="md-nav__link">
+      <a href="../../Load%20as%20Makefile%20Project/Load%20Makefile%20project/" class="md-nav__link">
         
   
   
@@ -706,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SRS/SRS%20Object%20integration%20to%20handle%20RTMP/SRS%20object%20integration%20to%20handle%20RTMP/" class="md-nav__link">
+      <a href="../../SRS%20Object%20integration%20to%20handle%20RTMP/SRS%20object%20integration%20to%20handle%20RTMP/" class="md-nav__link">
         
   
   
@@ -734,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SRS/Shared%20live%20media%20plane/shared%20live%20media%20plane%20in%20srs/" class="md-nav__link">
+      <a href="../../Shared%20live%20media%20plane/shared%20live%20media%20plane%20in%20srs/" class="md-nav__link">
         
   
   
@@ -759,10 +761,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../SRS/SRS%20Shared%20Live%20Source%20Core%20business%20logic/SRS%20Shared%20Live%20Source%20Core%20business%20logic/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SRS Shared Live Source - Core business logic
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -778,6 +805,112 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#srs-shared-live-source-core-business-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SRS Shared Live Source — core business logic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mental-model-stream-identity-shared-live-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mental model: stream identity + shared live path
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conn-vs-source-ay-la-core-cua-share" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conn vs Source: đây là core của share
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registry-noi-stream-uoc-luu-tru-srslivesourcemanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registry: nơi stream được lưu trữ (SrsLiveSourceManager)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hanh-trinh-cua-1-packet-xuyen-suot-qua-srs-service-ingest-source-consumer-send" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hành trình của 1 packet xuyên suốt qua SRS service : ingest → source → consumer → send
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-registry-flyweight-mediator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Patterns : Registry / Flyweight / Mediator
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trace-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trace code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kien-truc-chung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kiến trúc chung
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -859,7 +992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Btrfs/understand%20qgroup/understanding_qgroup/" class="md-nav__link">
+      <a href="../../../Btrfs/understand%20qgroup/understanding_qgroup/" class="md-nav__link">
         
   
   
@@ -956,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../OatppClientDemo/oatpp_client_demo/" class="md-nav__link">
+      <a href="../../../OatppClientDemo/oatpp_client_demo/" class="md-nav__link">
         
   
   
@@ -1053,7 +1186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Mkdocs/Using%20Notion%20a%20Blog%20Editor%2064e03300222542059af5d85a4ded90e9/" class="md-nav__link">
+      <a href="../../../Mkdocs/Using%20Notion%20a%20Blog%20Editor%2064e03300222542059af5d85a4ded90e9/" class="md-nav__link">
         
   
   
@@ -1160,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CMake/cmake_01_hello_world/" class="md-nav__link">
+      <a href="../../../CMake/cmake_01_hello_world/" class="md-nav__link">
         
   
   
@@ -1188,7 +1321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CMake/cmake_02_separated_build_folder/" class="md-nav__link">
+      <a href="../../../CMake/cmake_02_separated_build_folder/" class="md-nav__link">
         
   
   
@@ -1216,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CMake/cmake_03_build_a_shared_library_with_CMake/" class="md-nav__link">
+      <a href="../../../CMake/cmake_03_build_a_shared_library_with_CMake/" class="md-nav__link">
         
   
   
@@ -1244,7 +1377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CMake/cmake_04_build_a_static_library_with_CMake/" class="md-nav__link">
+      <a href="../../../CMake/cmake_04_build_a_static_library_with_CMake/" class="md-nav__link">
         
   
   
@@ -1272,7 +1405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CMake/cmake_05_include_a_library_with_CMake/" class="md-nav__link">
+      <a href="../../../CMake/cmake_05_include_a_library_with_CMake/" class="md-nav__link">
         
   
   
@@ -1300,7 +1433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CMake/cmake_extra01_functions_explanation/" class="md-nav__link">
+      <a href="../../../CMake/cmake_extra01_functions_explanation/" class="md-nav__link">
         
   
   
@@ -1333,8 +1466,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1356,11 +1487,11 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
         
           
           <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
@@ -1381,7 +1512,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1396,37 +1527,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Example with levelDB
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../LevelDB/leveldb_01_hello_world/" class="md-nav__link">
         
   
   
@@ -1442,92 +1546,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#target" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Target:​
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#some-facts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Some facts:
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lets-see-with-source-tree" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lets see with source tree:
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#source-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Source code
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-the-program" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Build the program
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#execute" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Execute
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1609,7 +1627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../IoTStack/IoTStack01_InstallationOnGCP/" class="md-nav__link">
+      <a href="../../../IoTStack/IoTStack01_InstallationOnGCP/" class="md-nav__link">
         
   
   
@@ -1706,7 +1724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../C%2B%2B/TuHocCpp0a696932184a476cb95c215fa83ac421/" class="md-nav__link">
+      <a href="../../../C%2B%2B/TuHocCpp0a696932184a476cb95c215fa83ac421/" class="md-nav__link">
         
   
   
@@ -1781,7 +1799,7 @@
   
   
   
-    <a href="../../LifeInCanada/Niagara%20Fall%202025%201d5673d139b580419d34ecdb2b41c37f/" class="md-nav__link">
+    <a href="../../../LifeInCanada/Niagara%20Fall%202025%201d5673d139b580419d34ecdb2b41c37f/" class="md-nav__link">
       
   
   
@@ -1840,7 +1858,7 @@
   
   
   
-    <a href="../../Biking/Bike%20I%20Ride/Bike%20I%20Ride%201d5673d139b580e0bc64eae6917664ec/" class="md-nav__link">
+    <a href="../../../Biking/Bike%20I%20Ride/Bike%20I%20Ride%201d5673d139b580e0bc64eae6917664ec/" class="md-nav__link">
       
   
   
@@ -1897,7 +1915,7 @@
   
   
   
-    <a href="../../Typing/WordPerMinute/First%20time%20100%20wpm/" class="md-nav__link">
+    <a href="../../../Typing/WordPerMinute/First%20time%20100%20wpm/" class="md-nav__link">
       
   
   
@@ -1941,166 +1959,138 @@
 
 
 
-<h1 id="an-example-of-using-leveldb">An example of using levelDB</h1>
-<h2 id="target">Target:​</h2>
-<ul>
-<li>In this post, I will explain how to write a simple program that can utilize the API that provide by levelDB</li>
-</ul>
-<h2 id="some-facts">Some facts:</h2>
-<ul>
-<li>LevelDB is a database that embedded into the process rathen running independently just as Postgresql or MongoDB.</li>
-<li>The data that is stored in levelDB is straightforward, that simply pairs of KV, Key and Value.</li>
-<li>LeveDB support a set of API so users can call, and there not too many of commands that we can call here.</li>
-</ul>
-<h2 id="lets-see-with-source-tree">Lets see with source tree:</h2>
-<p>Here we have a single source code that include the header leveldb/db.h</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="na">root@Henry-WIN</span><span class="o">:</span><span class="s">leveldb_practice# tree</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="na">.</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="na">└──</span><span class="w"> </span><span class="s">leveldb_example.cpp</span>
+  <h1>SRS Shared Live Source - Core business logic</h1>
+
+<h2 id="srs-shared-live-source-core-business-logic">SRS Shared Live Source — core business logic</h2>
+<p>Sau khi trace xong cấu trúc tổng quát của SRS theo kiểu “class A có component là class B, C, D, etc” theo kiểu nhận diện cấu trúc OO layer từ server → syscall socket, bước tiếp theo thì mình đào sâu vào business domain. Cũng là chia sẻ tiếp theo ở bài này. Mình gọi là Core #2, vì Core #1 mình trace về kiến trúc của service, Core # 2 mình trace business domain.</p>
+<p>SRS được thiết quanh “stream identity + shared live path”. Lớp Conn được dùng như class kiến trúc cho app để thực hiện mục đích streaming. Nếu Core #1 cấu trúc OO phân chia trách nhiệm các components “để có một cái khung cho mọi thứ chạy được”, thì Core #2 mới là phần “để hệ thống thực hiện mục đích của nó”.</p>
+<p>Bài này để chia sẻ về nơi mình trace được về state của một stream sau khi được gom lại, được chia sẻ, được fanout, và được quản lý lifecycle.</p>
+<h2 id="mental-model-stream-identity-shared-live-path">Mental model: stream identity + shared live path</h2>
+<p>Điểm đầu tiên đó là <strong>một stream được định danh</strong> (thường qua <code>ISrsRequest</code>, ví dụ vhost/app/stream), và hệ thống cần đảm bảo <strong>tất cả client cùng stream đó đều access vào chung một “hub”</strong>.</p>
+<p>Nói cách khác: RTMP URL kiểu</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>rtmp://server/live/livestream
 </code></pre></div>
-<h2 id="source-code">Source code</h2>
-<p>Content of the file is as follow</p>
-<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">leveldb_example.cpp</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span>
-<span class="normal"><a href="#__codelineno-1-15">15</a></span>
-<span class="normal"><a href="#__codelineno-1-16">16</a></span>
-<span class="normal"><a href="#__codelineno-1-17">17</a></span>
-<span class="normal"><a href="#__codelineno-1-18">18</a></span>
-<span class="normal"><a href="#__codelineno-1-19">19</a></span>
-<span class="normal"><a href="#__codelineno-1-20">20</a></span>
-<span class="normal"><a href="#__codelineno-1-21">21</a></span>
-<span class="normal"><a href="#__codelineno-1-22">22</a></span>
-<span class="normal"><a href="#__codelineno-1-23">23</a></span>
-<span class="normal"><a href="#__codelineno-1-24">24</a></span>
-<span class="normal"><a href="#__codelineno-1-25">25</a></span>
-<span class="normal"><a href="#__codelineno-1-26">26</a></span>
-<span class="normal"><a href="#__codelineno-1-27">27</a></span>
-<span class="normal"><a href="#__codelineno-1-28">28</a></span>
-<span class="normal"><a href="#__codelineno-1-29">29</a></span>
-<span class="normal"><a href="#__codelineno-1-30">30</a></span>
-<span class="normal"><a href="#__codelineno-1-31">31</a></span>
-<span class="normal"><a href="#__codelineno-1-32">32</a></span>
-<span class="normal"><a href="#__codelineno-1-33">33</a></span>
-<span class="normal"><a href="#__codelineno-1-34">34</a></span>
-<span class="normal"><a href="#__codelineno-1-35">35</a></span>
-<span class="normal"><a href="#__codelineno-1-36">36</a></span>
-<span class="normal"><a href="#__codelineno-1-37">37</a></span>
-<span class="normal"><a href="#__codelineno-1-38">38</a></span>
-<span class="normal"><a href="#__codelineno-1-39">39</a></span>
-<span class="normal"><a href="#__codelineno-1-40">40</a></span>
-<span class="normal"><a href="#__codelineno-1-41">41</a></span>
-<span class="normal"><a href="#__codelineno-1-42">42</a></span>
-<span class="normal"><a href="#__codelineno-1-43">43</a></span>
-<span class="normal"><a href="#__codelineno-1-44">44</a></span>
-<span class="normal"><a href="#__codelineno-1-45">45</a></span>
-<span class="normal"><a href="#__codelineno-1-46">46</a></span>
-<span class="normal"><a href="#__codelineno-1-47">47</a></span>
-<span class="normal"><a href="#__codelineno-1-48">48</a></span>
-<span class="normal"><a href="#__codelineno-1-49">49</a></span>
-<span class="normal"><a href="#__codelineno-1-50">50</a></span>
-<span class="normal"><a href="#__codelineno-1-51">51</a></span>
-<span class="normal"><a href="#__codelineno-1-52">52</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;assert.h&gt;</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unistd.h&gt;</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;leveldb/db.h&quot;</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8"></a>
-<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="c1">// build the code with $ g++ -o leveldb_example leveldb_example.cpp -lleveldb</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="p">{</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="n">leveldb</span><span class="o">::</span><span class="n">DB</span><span class="w"> </span><span class="o">*</span><span class="n">db</span><span class="p">;</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">    </span><span class="n">leveldb</span><span class="o">::</span><span class="n">Options</span><span class="w"> </span><span class="n">options</span><span class="p">;</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14"></a>
-<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">    </span><span class="n">options</span><span class="p">.</span><span class="n">create_if_missing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">    </span><span class="c1">//open</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">    </span><span class="n">leveldb</span><span class="o">::</span><span class="n">Status</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">leveldb</span><span class="o">::</span><span class="n">DB</span><span class="o">::</span><span class="n">Open</span><span class="p">(</span><span class="n">options</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/tmp/testdb&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">db</span><span class="p">);</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">    </span><span class="n">assert</span><span class="p">(</span><span class="n">status</span><span class="p">.</span><span class="n">ok</span><span class="p">());</span>
-<a id="__codelineno-1-19" name="__codelineno-1-19"></a>
-<a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;name&quot;</span><span class="p">;</span>
-<a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;HenryLe&quot;</span><span class="p">;</span>
-<a id="__codelineno-1-22" name="__codelineno-1-22"></a>
-<a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">    </span><span class="c1">// write - PUT</span>
-<a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">    </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">db</span><span class="o">-&gt;</span><span class="n">Put</span><span class="p">(</span><span class="n">leveldb</span><span class="o">::</span><span class="n">WriteOptions</span><span class="p">(),</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">);</span>
-<a id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="w">    </span><span class="n">assert</span><span class="p">(</span><span class="n">status</span><span class="p">.</span><span class="n">ok</span><span class="p">());</span>
-<a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;=== Write K:[&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;] V:[&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;] to DB&quot;</span><span class="w">  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-1-27" name="__codelineno-1-27"></a>
-<a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="w">    </span><span class="c1">// read - GET</span>
-<a id="__codelineno-1-29" name="__codelineno-1-29"></a><span class="w">    </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">db</span><span class="o">-&gt;</span><span class="n">Get</span><span class="p">(</span><span class="n">leveldb</span><span class="o">::</span><span class="n">ReadOptions</span><span class="p">(),</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">value</span><span class="p">);</span>
-<a id="__codelineno-1-30" name="__codelineno-1-30"></a><span class="w">    </span><span class="n">assert</span><span class="p">(</span><span class="n">status</span><span class="p">.</span><span class="n">ok</span><span class="p">());</span>
-<a id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;=== Read K:[&quot;</span><span class="w">  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;] V:[&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;] from DB&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-1-32" name="__codelineno-1-32"></a>
-<a id="__codelineno-1-33" name="__codelineno-1-33"></a><span class="w">    </span><span class="c1">// delete - DELETE</span>
-<a id="__codelineno-1-34" name="__codelineno-1-34"></a><span class="w">    </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">db</span><span class="o">-&gt;</span><span class="n">Delete</span><span class="p">(</span><span class="n">leveldb</span><span class="o">::</span><span class="n">WriteOptions</span><span class="p">(),</span><span class="w"> </span><span class="n">key</span><span class="p">);</span>
-<a id="__codelineno-1-35" name="__codelineno-1-35"></a><span class="w">    </span><span class="n">assert</span><span class="p">(</span><span class="n">status</span><span class="p">.</span><span class="n">ok</span><span class="p">());</span>
-<a id="__codelineno-1-36" name="__codelineno-1-36"></a>
-<a id="__codelineno-1-37" name="__codelineno-1-37"></a><span class="w">    </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">db</span><span class="o">-&gt;</span><span class="n">Get</span><span class="p">(</span><span class="n">leveldb</span><span class="o">::</span><span class="n">ReadOptions</span><span class="p">(),</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">value</span><span class="p">);</span>
-<a id="__codelineno-1-38" name="__codelineno-1-38"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">status</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span>
-<a id="__codelineno-1-39" name="__codelineno-1-39"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-1-40" name="__codelineno-1-40"></a><span class="w">        </span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;=== Failed to read kv after deletion: [&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;] Status: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">status</span><span class="p">.</span><span class="n">ToString</span><span class="p">()</span><span class="w">  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-1-41" name="__codelineno-1-41"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-1-42" name="__codelineno-1-42"></a><span class="w">    </span><span class="k">else</span>
-<a id="__codelineno-1-43" name="__codelineno-1-43"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-1-44" name="__codelineno-1-44"></a><span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;===&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<a id="__codelineno-1-45" name="__codelineno-1-45"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-1-46" name="__codelineno-1-46"></a><span class="w">    </span><span class="c1">// usleep(20000000);</span>
-<a id="__codelineno-1-47" name="__codelineno-1-47"></a>
-<a id="__codelineno-1-48" name="__codelineno-1-48"></a><span class="w">    </span><span class="c1">// close</span>
-<a id="__codelineno-1-49" name="__codelineno-1-49"></a><span class="w">    </span><span class="k">delete</span><span class="w"> </span><span class="n">db</span><span class="p">;</span>
-<a id="__codelineno-1-50" name="__codelineno-1-50"></a>
-<a id="__codelineno-1-51" name="__codelineno-1-51"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<a id="__codelineno-1-52" name="__codelineno-1-52"></a><span class="p">}</span>
-</code></pre></div></td></tr></table></div>
-The flow of the code is as follow:</p>
+<p>thực ra map về một key “live/livestream” (stream identity). Và key đó trỏ tới <strong>một bản ghi duy nhất</strong>: <code>SrsLiveSource</code>.</p>
+<p>Vì sao phải làm vậy? Vì live streaming không phải “mỗi client một state”, mà là <strong>nhiều client chia sẻ cùng một state</strong>.</p>
+<h2 id="conn-vs-source-ay-la-core-cua-share">Conn vs Source: đây là core của share</h2>
+<p>Trong SRS, hai object đứng giữa mọi thứ để thực hiện business domain (chia sẻ media realtime)</p>
 <ul>
-<li>We open the database with <strong>leveldb::DB::Open()</strong></li>
-<li>We <strong>write/put</strong> data to the database, in this case a pair of Key|Value -- name|Henry</li>
-<li>We <strong>read/get</strong> the data from the database to see if the data is written to database properly</li>
-<li>We <strong>delete</strong> the data</li>
-<li>And finally, we <strong>read</strong> the data again and see the confirmation that the data is deleted</li>
+<li><code>SrsRtmpConn</code> = <strong>connection/session scoped</strong> (mỗi TCP client có một conn)</li>
+<li><code>SrsLiveSource</code> = <strong>stream scoped shared domain object</strong> (mỗi stream có một source)</li>
 </ul>
-<h2 id="build-the-program">Build the program</h2>
-<p>To build the program, we type the command below</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">$</span><span class="w"> </span><span class="n">g</span><span class="o">++</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">leveldb_example</span><span class="w"> </span><span class="n">leveldb_example</span><span class="p">.</span><span class="n">cpp</span><span class="w"> </span><span class="o">-</span><span class="n">lleveldb</span><span class="err">​</span>
+<p>diagram đơn giản:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>+------------------+
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>|   SrsRtmpConn    |   (1 TCP client session)
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>+--------+---------+
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>         |
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>         | fetch_or_create(req)
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>         v
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>+----------------------+
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>|    SrsLiveSource     |   (1 stream hub)
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>|  - publisher         |
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>|  - consumers[]       |
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>|  - GOP cache         |
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>+----------------------+
 </code></pre></div>
-<p><strong>Note:​</strong></p>
+<p>Thiết kế này nhìn có vẻ cơ bản, nhưng quyết định toàn bộ kiến trúc:</p>
 <ul>
-<li>
-<p>To successfully build the program, the system need to installed leveldb. Otherwise, the compiling will fail due to lack of library that need for the build.</p>
+<li>Conn <strong>sống theo client lifetime</strong>: connect → do task → disconnect → destroy</li>
+<li>Source <strong>sống theo stream lifetime</strong>: tồn tại chừng nào stream còn active (và có cơ chế manager/pool)</li>
+</ul>
+<p>Nếu để conn “own” source kiểu composition cứng, số lượng source sẽ rep theo số lượng conn và scale sẽ toang tại đây do source sẽ không chịu nổi lượng conn nhiều như vậy</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Publisher conn -&gt; source A
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Player1 conn   -&gt; source B
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Player2 conn   -&gt; source C
+</code></pre></div>
+<p>Nên ở đây sẽ là: <strong>Conn uses Source</strong>, không phải “Conn owns Source”.</p>
+<h2 id="registry-noi-stream-uoc-luu-tru-srslivesourcemanager">Registry: nơi stream được lưu trữ (SrsLiveSourceManager)</h2>
+<p>Một stream muốn “shared” được thì phải có chỗ đăng ký toàn cục. Trong code thì là chỗ này:</p>
+<ul>
+<li><code>_srs_sources = new SrsLiveSourceManager();</code></li>
+<li>manager giữ <code>pool_</code> (map key → <code>SrsLiveSource</code>)</li>
+<li>API quan trọng: <code>fetch_or_create</code> / <code>fetch</code><a href="https://www.notion.so/Shared-live-source-RTMP-h-c-g-33e673d139b58012804aff99cefaa3b4?pvs=21">[1]</a></li>
+</ul>
+<p>Manager đóng vai trò như một registry, mình có một note riêng về các design pattern hay gặp và hay dùng, sẽ làm một post riêng:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>stream_identity (string key)
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  -&gt; SrsLiveSource (shared ptr)
+</code></pre></div>
+<p>Khi <code>SrsRtmpConn</code> đã parse ra request (<code>req</code>) thì nó bridge sang domain layer qua interface, tách rời trách nhiệm giữa conn và source tại đây</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>live_sources_-&gt;fetch_or_create(req, live_source)
+</code></pre></div>
+<p>Trách nhiệm phân chia như này:</p>
+<ul>
+<li>connection: RTMP command / socket / session</li>
+<li>domain: stream hub / consumer / gop cache / fanout</li>
+</ul>
+<h2 id="hanh-trinh-cua-1-packet-xuyen-suot-qua-srs-service-ingest-source-consumer-send">Hành trình của 1 packet xuyên suốt qua SRS service : ingest → source → consumer → send</h2>
+<p>Core logic của 1 app chính là dòng chảy của data như thế nào và biến đổi ra sao, sau đó đi về đâu. Vậy nên trace  “đường đi của 1 packet”  là cách để mình nắm rõ được logic của 1 service. Trace end-to-end thì đại khái như sau (mình chỉ trace mỗi RTMP path, các protocol khác sẽ khác nhưng đại ý thì như nhau):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>PUBLISHER: OBS/FFmpeg
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  -&gt; SrsRtmpConn::publishing()
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>     -&gt; rtmp-&gt;recv_message(&amp;msg)
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>     -&gt; process_publish_message(msg)
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>     -&gt; source-&gt;on_video(msg) / on_audio(msg)
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>INSIDE SrsLiveSource
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>  -&gt; jitter-&gt;correct(msg)
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>  -&gt; gop_cache-&gt;cache(msg)
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>  -&gt; consumers[i]-&gt;enqueue(msg)
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>  -&gt; (hls/dvr/forwarder nếu bật)
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>PLAYER CONNECTS
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>  -&gt; SrsRtmpConn::playing()
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>     -&gt; source-&gt;create_consumer(consumer)
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>     -&gt; gop_cache-&gt;dump(consumer)
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>PER CONSUMER SEND LOOP
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>  -&gt; consumer-&gt;dump_packets(...)
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>  -&gt; rtmp-&gt;send_and_free_messages(...)
+</code></pre></div>
+<p>Một điểm đang chú ý đó là <strong>source không “push thẳng” ra socket</strong>.</p>
+<p>SRS làm đúng kiểu decoupling:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Source fanout -&gt; Consumer queue -&gt; Play conn pull -&gt; send
+</code></pre></div>
+<p>Nhìn luồng data biến đổi thì mọi thứ kiểu “tại sao cần consumer”, “tại sao cần queue”, “tại sao join vào phải dump GOP cache” đều tự nhiên hợp lý.</p>
+<h2 id="patterns-registry-flyweight-mediator">Patterns : Registry / Flyweight / Mediator</h2>
+<p>Core #2 của SRS dùng một combo các patterns:</p>
+<ul>
+<li><strong>Registry</strong>: manager giữ map stream identity → source</li>
+<li><strong>Flyweight</strong>: 1 stream chỉ có 1 object shared</li>
+<li><strong>Mediator</strong>: source đứng giữa publisher và consumers, điều phối fanout</li>
+</ul>
+<p>Cái hay của combo này là scale cho việc chia sẻ:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>1000 viewers:
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  1001 conn objects
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  1 source object
+</code></pre></div>
+<p>Nếu thiết kế sai (mỗi conn ôm một state stream), sẽ có 1001 “stream states”, và mọi tối ưu (gop cache, metadata, publisher state) trở thành một đống thập cẩm.</p>
+<h2 id="trace-code">Trace code</h2>
+<p>Nếu mức độ code level thì thứ tự trace và keyword gần như notes ở trên:</p>
+<ol>
+<li><code>srs_app_rtmp_conn.cpp</code><ul>
+<li><code>do_cycle</code>, <code>publishing</code>, <code>playing</code>, <code>recv_message</code>, <code>process_publish_message</code></li>
+</ul>
 </li>
-<li>
-<p>To install levelDB, refer to <a href="https://github.com/google/leveldb">Google/leveldb</a></p>
-</li>
+<li><code>srs_app_source.cpp</code><ul>
+<li><code>fetch_or_create</code>, <code>on_video</code>, <code>on_audio</code>, <code>create_consumer</code></li>
 </ul>
-<h2 id="execute">Execute</h2>
-<p>After compile the program, in your source will have the compiled/binary file as beloy:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gp">root@Henry-WIN:leveldb_practice# </span>tree
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="go">.</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="go">├── leveldb_example</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="go">└── leveldb_example.cpp</span>
-</code></pre></div>
-<p>Now, lets run the program to see the result:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="gp">root@Henry-WIN:leveldb_practice# </span>./leveldb_example
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="go">=== Write K:[name] V:[HenryLe] to DB</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="go">=== Read K:[name] V:[HenryLe] from DB</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="go">=== Failed to read kv after deletion: [name] Status: NotFound:</span>
-</code></pre></div>
-<p>The data the content Key|Value name|Henry is written to database. Then read from database, then deleted, and after deleted, we read the data and receive warning that the data is not found in the database. All work as expected.</p>
-<p>This short tutorial is a note so that I can refer later to when I need it.</p>
-<p>Source code can be found <a href="https://github.com/hieubkhcm/example_with_leveldb">HERE</a></p>
+</li>
+<li><code>srs_app_consumer.cpp</code><ul>
+<li><code>enqueue</code>, <code>dump_packets</code></li>
+</ul>
+</li>
+<li><code>srs_app_gop_cache.cpp</code><ul>
+<li><code>cache</code>, <code>dump</code></li>
+</ul>
+</li>
+<li>modules: <code>hls</code>, <code>dvr</code>, forwarder</li>
+</ol>
+<h2 id="kien-truc-chung">Kiến trúc chung</h2>
+<p>SRS là tư duy kiến trúc chung cho backend systems:</p>
+<ul>
+<li><strong>Connection is ephemeral</strong> (session scoped)</li>
+<li><strong>Domain object is persistent (while business entity lives)</strong> (stream/topic/room scoped)</li>
+<li>Muốn scale, phải có <strong>shared hub + registry + fanout decoupling</strong></li>
+</ul>
 
 
 
@@ -2359,10 +2349,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.prune", "navigation.indexes", "navigation.sections", "toc.integrate", "toc.follow", "navigation.top", "header.autohide", "content.code.annotate", "search.suggest", "search.highlight", "header.social"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.prune", "navigation.indexes", "navigation.sections", "toc.integrate", "toc.follow", "navigation.top", "header.autohide", "content.code.annotate", "search.suggest", "search.highlight", "header.social"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
